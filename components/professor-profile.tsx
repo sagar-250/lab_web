@@ -129,12 +129,6 @@ export default function ProfessorProfile() {
                     </div>
                   </div>
                 </div>
-
-                <div className="mt-6">
-                  <Button onClick={() => setShowModal(true)} className="bg-blue-600 hover:bg-blue-700 text-white">
-                    Know More
-                  </Button>
-                </div>
               </div>
             </div>
           </div>
@@ -142,7 +136,7 @@ export default function ProfessorProfile() {
       </section>
 
       <Dialog open={showModal} onOpenChange={setShowModal}>
-        <DialogContent className="max-w-[95vw] max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold">Dr. Subbarao Pichuka - Complete Profile</DialogTitle>
           </DialogHeader>
@@ -151,7 +145,7 @@ export default function ProfessorProfile() {
             {/* Left: Image */}
             <div className="overflow-hidden rounded-lg">
               <img
-                src="/pichuka.jpg"
+                src="/pichuka.jpeg"
                 alt="Dr. Subbarao Pichuka"
                 className="w-full h-auto object-cover"
               />
@@ -160,34 +154,34 @@ export default function ProfessorProfile() {
             {/* Right: Full Introduction */}
             <div className="space-y-6 text-sm leading-relaxed">
               <div>
-                <h3 className="text-lg font-bold mb-2 text-primary">Position</h3>
+                <h3 className="text-lg font-bold mb-2 text-green-600">Position</h3>
                 <p>Assistant Professor, Department of Civil Engineering, IIT Madras</p>
               </div>
 
               <div>
-                <h3 className="text-lg font-bold mb-2 text-primary">About</h3>
+                <h3 className="text-lg font-bold mb-2 text-green-600">About</h3>
                 <p className="mb-3">
-                  Dr. Sreeparvathy Vijay is an Assistant Professor in the Department of Civil Engineering at the Indian
-                  Institute of Technology Madras, specializing in Hydraulics and Water Resources Engineering (HWRE). She
-                  works at the intersection of hydrology, remote sensing, and artificial intelligence/data science, with
-                  a focus on addressing some of the most critical challenges in water resources management and climate
+                  Dr. Subbarao Pichuka is an Assistant Professor in the Department of Civil Engineering at the Indian
+                  Institute of Technology Madras, specializing in Hydraulics and Water Resources Engineering (HWRE). He
+                  works at the intersection of hydrology, climate science, and statistical modeling, with
+                  a focus on addressing critical challenges in water resources management and climate
                   resilience.
                 </p>
                 <p className="mb-3">
-                  Her research spans hydroclimatic extremes, design of hydrometeorological monitoring networks, climate
-                  change impact assessment, climate regionalization and attribution analysis, and the non-stationarity
-                  of hydrometeorological variables. She integrates multi-source datasets, remote sensing products, and
-                  advanced machine learning/deep learning methods to improve prediction, monitoring, and assessment of
-                  natural disasters (e.g., floods and droughts).
+                  His research spans climate change impact assessment on hydroclimatic variables, hydrological modeling under
+                  non-stationary conditions, statistical downscaling of climate variables, extreme precipitation and temperature
+                  analysis, and dam safety under climate change. He integrates advanced statistical methods and
+                  machine learning techniques to improve prediction, monitoring, and assessment of
+                  water-related natural disasters.
                 </p>
                 <p>
-                  Driven by the vision of creating data-informed, climate-resilient water systems, she actively works on
-                  bridging the gap between physical process understanding and data-driven innovations in hydrology.
+                  Driven by the vision of creating climate-resilient water systems, he actively works on
+                  developing innovative approaches for assessing and managing water resources under changing climate conditions.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg font-bold mb-2 text-primary">Research Areas</h3>
+                <h3 className="text-lg font-bold mb-2 text-green-600">Research Areas</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li>Climate Change Impact Assessment on Water Resources</li>
                   <li>Hydrological Modeling under Non-stationary Conditions</li>
@@ -201,7 +195,7 @@ export default function ProfessorProfile() {
               </div>
 
               <div>
-                <h3 className="text-lg font-bold mb-2 text-primary">Education</h3>
+                <h3 className="text-lg font-bold mb-2 text-green-600">Education</h3>
                 <div className="space-y-3">
                   <div>
                     <p className="font-semibold">Ph.D. in Civil Engineering</p>
@@ -223,7 +217,7 @@ export default function ProfessorProfile() {
               </div>
 
               <div>
-                <h3 className="text-lg font-bold mb-2 text-primary">Selected Publications</h3>
+                <h3 className="text-lg font-bold mb-2 text-green-600">Selected Publications</h3>
                 <ul className="space-y-2 text-xs">
                   <li>
                     • Pichuka, S., & Maity, R. (2021). A novel approach for time-varying reliability analysis
@@ -242,7 +236,7 @@ export default function ProfessorProfile() {
               </div>
 
               <div>
-                <h3 className="text-lg font-bold mb-2 text-primary">Contact</h3>
+                <h3 className="text-lg font-bold mb-2 text-green-600">Contact</h3>
                 <p>Email: srp@iitm.ac.in</p>
                 <p>Phone: +91 7585965850</p>
                 <p>Office: Department of Civil Engineering, IIT Madras, Chennai 600036</p>
