@@ -9,6 +9,14 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/30 border-b border-white/10">
+      {/* Backdrop for mobile menu */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/20 md:hidden -z-10" 
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -54,25 +62,26 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2 bg-black/40 backdrop-blur-md rounded-lg mt-2">
-            <Link href="/" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm">
+            <Link href="/" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm" onClick={() => setIsOpen(false)}>
               Home
             </Link>
-            <Link href="/people" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm">
+            <Link href="/people" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm" onClick={() => setIsOpen(false)}>
               People
             </Link>
-            <Link href="/updates" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm">
+            <Link href="/updates" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm" onClick={() => setIsOpen(false)}>
               Updates
             </Link>
             <Link
               href="/achievements"
               className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm"
+              onClick={() => setIsOpen(false)}
             >
               Achievements
             </Link>
-            <Link href="/teaching" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm">
+            <Link href="/teaching" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm" onClick={() => setIsOpen(false)}>
               Teaching
             </Link>
-            <Link href="/contact" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm">
+            <Link href="/contact" className="block px-4 py-2 hover:bg-white/10 rounded transition text-white text-sm" onClick={() => setIsOpen(false)}>
               Contact
             </Link>
           </div>

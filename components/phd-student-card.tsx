@@ -67,7 +67,7 @@ export default function PhDStudentCard({
             <span>Joined: {dateOfJoining}</span>
           </div>
 
-          <a href={`mailto:${email}`} className="text-xs text-accent hover:opacity-75 transition block mb-4">
+          <a href={`mailto:${email}`} className="text-xs text-green-600 hover:opacity-75 transition block mb-4">
             {email}
           </a>
 
@@ -113,7 +113,7 @@ export default function PhDStudentCard({
                 <div className="space-y-2">
                   <a
                     href={`mailto:${email}`}
-                    className="flex items-center gap-2 text-sm text-primary hover:opacity-75 transition"
+                    className="flex items-center gap-2 text-sm text-green-600 hover:opacity-75 transition"
                   >
                     <Mail className="w-4 h-4" />
                     Email
@@ -123,7 +123,7 @@ export default function PhDStudentCard({
                       href={`https://${linkedin}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-primary hover:opacity-75 transition"
+                      className="flex items-center gap-2 text-sm text-green-600 hover:opacity-75 transition"
                     >
                       <Linkedin className="w-4 h-4" />
                       LinkedIn
@@ -134,7 +134,7 @@ export default function PhDStudentCard({
                       href={googleScholar}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-primary hover:opacity-75 transition"
+                      className="flex items-center gap-2 text-sm text-green-600 hover:opacity-75 transition"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Google Scholar
@@ -145,7 +145,7 @@ export default function PhDStudentCard({
                       href={`https://orcid.org/${orcid}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-primary hover:opacity-75 transition"
+                      className="flex items-center gap-2 text-sm text-green-600 hover:opacity-75 transition"
                     >
                       <ExternalLink className="w-4 h-4" />
                       ORCID
@@ -157,7 +157,7 @@ export default function PhDStudentCard({
               {/* Right: Details */}
               <div>
                 <div className="mb-6">
-                  <h3 className="text-sm font-bold text-accent uppercase tracking-wider mb-2">Thesis Title</h3>
+                  <h3 className="text-sm font-bold text-green-600 uppercase tracking-wider mb-2">Thesis Title</h3>
                   <p className="text-lg font-semibold mb-4">{thesisTitle}</p>
                   <p className="text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 inline mr-2" />
@@ -166,7 +166,7 @@ export default function PhDStudentCard({
                 </div>
 
                 <div>
-                  <h3 className="text-sm font-bold text-accent uppercase tracking-wider mb-3">Introduction</h3>
+                  <h3 className="text-sm font-bold text-green-600 uppercase tracking-wider mb-3">Introduction</h3>
                   <p className="text-sm leading-relaxed text-muted-foreground whitespace-pre-line">{introduction}</p>
                 </div>
               </div>
